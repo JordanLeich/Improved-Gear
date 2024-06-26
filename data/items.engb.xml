@@ -1228,7 +1228,7 @@
             </powerup>
         </enhancement>
     </tr_item>
-    <item class="gloves" cost="50000" displayname="Asgard Armor" enemy_level="-1" model="pickups/equip_belt_a" name="ASGRD_AMR" quality="legend" type="equipment" unique="true">
+    <item class="gloves" cost="100000" displayname="Asgard Armor" enemy_level="-1" model="pickups/equip_belt_a" name="ASGRD_AMR" quality="legend" type="equipment" unique="true">
         <enhancement description="+^%d%% $RES_ELEMENTAL">
             <powerup life="-1">
                 <affecter attribute="resist_elemental" level="0.5"/>
@@ -1244,8 +1244,8 @@
         </enhancement>
     </item>
     <item class="gloves" cost="50000" displayname="Joybuzzer" enemy_level="-1" model="pickups/equip_belt_a" name="ARCADE_BUZZER" quality="legend" spawned_from="ArcadeBot" type="equipment" unique="true">
-        <enhancement description="^5%% of melee attacks will paralyze victim">
-            <powerup chance="0.05" class="chance_of_new_powerup" life="-1">
+        <enhancement description="^15%% of melee attacks will paralyze victim">
+            <powerup chance="0.15" class="chance_of_new_powerup" life="-1">
                 <affecter attribute="powerup_scope">
                     <scope scope_attack="punch"/>
                     <scope scope_attack="kick"/>
@@ -1260,37 +1260,32 @@
             <powerup class="hurt_attacker" damagepercent="0.05" hurtowner="true" life="-1" onlyhurtmelee="true"/>
         </enhancement>
     </item>
-    <item class="gloves" cost="50000" displayname="Attuma's Wrath" enemy_level="-1" model="pickups/equip_belt_a" name="ATMA_WRATH" quality="legend" spawned_from="Attuma" type="equipment" unique="true">
+    <item class="gloves" cost="75000" displayname="Attuma's Wrath" enemy_level="-1" model="pickups/equip_belt_a" name="ATMA_WRATH" quality="legend" spawned_from="Attuma" type="equipment" unique="true">
         <enhancement description="+^%d%% $DMG to all powers">
             <powerup life="-1">
-                <affecter affect_type="scale" attribute="damage" level="1.25" scope_powers="true"/>
+                <affecter affect_type="scale" attribute="damage" level="1.30" scope_powers="true"/>
             </powerup>
         </enhancement>
     </item>
-    <item class="gloves" cost="50000" displayname="Blackheart's Corruption" enemy_level="-1" model="pickups/equip_belt_a" name="BLCKHRT_CRPTN" quality="legend" spawned_from="Blackheart" type="equipment" unique="true">
-        <enhancement description="^5%% of $DMG dealt returns as $HP and $EP">
+    <item class="gloves" cost="30000" displayname="Blackheart's Corruption" enemy_level="-1" model="pickups/equip_belt_a" name="BLCKHRT_CRPTN" quality="legend" spawned_from="Blackheart" type="equipment" unique="true">
+        <enhancement description="^10%% of $DMG dealt returns as $HP and $EP">
             <powerup life="-1">
-                <affecter affect_type="scale" attribute="atk_vampire" level="0.05"/>
-                <affecter affect_type="scale" attribute="atk_vampire_energy" level="0.05"/>
-            </powerup>
-        </enhancement>
-        <enhancement description="^%d%% $XP">
-            <powerup life="-1">
-                <affecter affect_type="scale" attribute="xp" level="0.95"/>
+                <affecter affect_type="scale" attribute="atk_vampire" level="0.15"/>
+                <affecter affect_type="scale" attribute="atk_vampire_energy" level="0.15"/>
             </powerup>
         </enhancement>
     </item>
     <item class="gloves" cost="50000" displayname="Bulldozer's Helmet" enemy_level="-1" model="pickups/equip_belt_a" name="BULDZR_HELM" quality="legend" spawned_from="Bulldozer" type="equipment" unique="true">
-        <enhancement description="Reflects ^5%% of $DMG">
+        <enhancement description="Reflects ^10%% of $DMG">
             <powerup life="-1">
-                <affecter affect_type="scale" attribute="reflect_damage" level="0.05"/>
+                <affecter affect_type="scale" attribute="reflect_damage" level="0.10"/>
             </powerup>
         </enhancement>
     </item>
     <item class="gloves" cost="50000" displayname="Assassin's Sight" enemy_level="-1" model="pickups/equip_belt_a" name="BULLS_SITE" quality="legend" spawned_from="Bullseye" type="equipment" unique="true">
         <enhancement description="+^%d%% critical chance on ranged attacks">
             <powerup life="-1">
-                <affecter attribute="atk_critical" level="0.05">
+                <affecter attribute="atk_critical" level="0.15">
                     <scope scope_attack="projectile"/>
                     <scope scope_attack="beam"/>
                 </affecter>
@@ -1300,25 +1295,25 @@
     <item class="gloves" cost="50000" displayname="Crown of Byrrah" enemy_level="-1" model="pickups/equip_belt_a" name="BYRR_CROWN" quality="legend" spawned_from="Byrrah" type="equipment" unique="true">
         <enhancement description="+^%d to Body, Focus and Strike">
             <powerup life="-1">
-                <affecter attribute="traits" level="2"/>
+                <affecter attribute="traits" level="3"/>
             </powerup>
         </enhancement>
     </item>
-    <item class="gloves" cost="50000" displayname="Super Soldier Serum" enemy_level="-1" model="pickups/equip_belt_a" name="DK_CAPT_SRUM" quality="legend" spawned_from="DarkCaptainAmerica" type="equipment" unique="true">
+    <item class="gloves" cost="75000" displayname="Super Soldier Serum" enemy_level="-1" model="pickups/equip_belt_a" name="DK_CAPT_SRUM" quality="legend" spawned_from="DarkCaptainAmerica" type="equipment" unique="true">
         <enhancement description="+^%d%% $HP">
             <powerup life="-1">
-                <affecter affect_type="scale" attribute="maxhealth" level="1.1"/>
+                <affecter affect_type="scale" attribute="maxhealth" level="1.25"/>
             </powerup>
         </enhancement>
     </item>
-    <item class="gloves" cost="50000" displayname="Dark Steel" enemy_level="-1" model="pickups/equip_belt_a" name="DK_COL_STEEL" quality="legend" spawned_from="DarkColossus" type="equipment" unique="true">
+    <item class="gloves" cost="75000" displayname="Dark Steel" enemy_level="-1" model="pickups/equip_belt_a" name="DK_COL_STEEL" quality="legend" spawned_from="DarkColossus" type="equipment" unique="true">
         <enhancement description="+^%d%% to $DR">
             <powerup life="-1">
-                <affecter affect_type="scale" attribute="defense_rating_scale" level="1.25"/>
+                <affecter affect_type="scale" attribute="defense_rating_scale" level="1.30"/>
             </powerup>
         </enhancement>
     </item>
-    <item class="gloves" cost="50000" displayname="Crimson Dawn" enemy_level="-1" model="pickups/equip_belt_a" name="DK_PSY_DAWN" quality="legend" spawned_from="DarkPsylocke" type="equipment" unique="true">
+    <item class="gloves" cost="75000" displayname="Crimson Dawn" enemy_level="-1" model="pickups/equip_belt_a" name="DK_PSY_DAWN" quality="legend" spawned_from="DarkPsylocke" type="equipment" unique="true">
         <enhancement description="+^%d $EP per knockout">
             <powerup life="-1">
                 <affecter attribute="energy_per_kill" level="35"/>
@@ -1330,10 +1325,10 @@
             </powerup>
         </enhancement>
     </item>
-    <item class="gloves" cost="50000" displayname="Spider's Bite" enemy_level="-1" model="pickups/equip_belt_a" name="DK_SPDMN_BITE" quality="legend" spawned_from="DarkSpiderman" type="equipment" unique="true">
+    <item class="gloves" cost="75000" displayname="Spider's Bite" enemy_level="-1" model="pickups/equip_belt_a" name="DK_SPDMN_BITE" quality="legend" spawned_from="DarkSpiderman" type="equipment" unique="true">
         <enhancement description="+^10%% chance to dodge melee attacks">
             <powerup life="-1">
-                <affecter attribute="def_dodge" level="0.1">
+                <affecter attribute="def_dodge" level="0.15">
                     <scope scope_attack="punch"/>
                     <scope scope_attack="kick"/>
                 </affecter>
@@ -1341,14 +1336,14 @@
         </enhancement>
         <enhancement description="+^%d%% movement and attack speed">
             <powerup life="-1">
-                <affecter affect_type="scale" attribute="move" level="1.2"/>
+                <affecter affect_type="scale" attribute="move" level="1.25"/>
             </powerup>
         </enhancement>
     </item>
-    <item class="gloves" cost="50000" displayname="Dark Uru Hammer" enemy_level="-1" model="pickups/equip_belt_a" name="DK_THOR_HMR" quality="legend" spawned_from="DarkThor" type="equipment" unique="true">
+    <item class="gloves" cost="75000" displayname="Dark Uru Hammer" enemy_level="-1" model="pickups/equip_belt_a" name="DK_THOR_HMR" quality="legend" spawned_from="DarkThor" type="equipment" unique="true">
         <enhancement description="+^10 $DMG_ELECTRICITY to all melee attacks">
             <powerup class="add_attack" damagetype="dmg_electricity" life="-1">
-                <affecter attribute="special" level="10"/>
+                <affecter attribute="special" level="15"/>
                 <affecter attribute="powerup_scope">
                     <scope scope_attack="punch"/>
                     <scope scope_attack="kick"/>
@@ -1364,30 +1359,30 @@
             </powerup>
         </enhancement>
     </item>
-    <item class="gloves" cost="50000" displayname="Deathbird's Feather" enemy_level="-1" model="pickups/equip_belt_a" name="DTHBRD_FTHR" quality="legend" spawned_from="Deathbird" type="equipment" unique="true">
+    <item class="gloves" cost="60000" displayname="Deathbird's Feather" enemy_level="-1" model="pickups/equip_belt_a" name="DTHBRD_FTHR" quality="legend" spawned_from="Deathbird" type="equipment" unique="true">
         <enhancement description="+^%d $HP regeneration">
             <powerup life="-1">
-                <affecter attribute="health_regen" level="5"/>
+                <affecter attribute="health_regen" level="10"/>
             </powerup>
         </enhancement>
     </item>
-    <item class="gloves" cost="50000" displayname="Doom's Mask" enemy_level="-1" model="pickups/equip_belt_a" name="DOOM_MASK" quality="legend" spawned_from="DrDoom" type="equipment" unique="true">
+    <item class="gloves" cost="100000" displayname="Doom's Mask" enemy_level="-1" model="pickups/equip_belt_a" name="DOOM_MASK" quality="legend" spawned_from="DrDoom" type="equipment" unique="true">
         <enhancement description="+^%d to all talents">
             <powerup life="-1">
-                <affecter attribute="all_talents" level="1"/>
+                <affecter attribute="all_talents" level="3"/>
             </powerup>
         </enhancement>
         <enhancement description="+^10%% to $HP and $EP">
             <powerup life="-1">
-                <affecter affect_type="scale" attribute="maxhealth" level="1.1"/>
-                <affecter affect_type="scale" attribute="maxenergy" level="1.1"/>
+                <affecter affect_type="scale" attribute="maxhealth" level="1.25"/>
+                <affecter affect_type="scale" attribute="maxenergy" level="1.25"/>
             </powerup>
         </enhancement>
     </item>
-    <item class="gloves" cost="50000" displayname="Dragon Polymer" enemy_level="-1" model="pickups/equip_belt_a" name="DGNMAN_PLYMR" quality="legend" spawned_from="DragonMan" type="equipment" unique="true">
+    <item class="gloves" cost="60000" displayname="Dragon Polymer" enemy_level="-1" model="pickups/equip_belt_a" name="DGNMAN_PLYMR" quality="legend" spawned_from="DragonMan" type="equipment" unique="true">
         <enhancement description="+^%d%% to $DR">
             <powerup life="-1">
-                <affecter affect_type="scale" attribute="defense_rating_scale" level="1.25"/>
+                <affecter affect_type="scale" attribute="defense_rating_scale" level="1.30"/>
             </powerup>
         </enhancement>
         <enhancement description="$EP regenerates at ^75%% of normal rate">
@@ -1396,7 +1391,7 @@
             </powerup>
         </enhancement>
     </item>
-    <item class="gloves" cost="50000" displayname="Aura of Seduction" enemy_level="-1" model="pickups/equip_belt_a" name="NCHNT_SDUCT" quality="legend" spawned_from="Enchantress" type="equipment" unique="true">
+    <item class="gloves" cost="30000" displayname="Aura of Seduction" enemy_level="-1" model="pickups/equip_belt_a" name="NCHNT_SDUCT" quality="legend" spawned_from="Enchantress" type="equipment" unique="true">
         <enhancement description="^5%% chance melee hit will turn enemy into ally for 30 seconds">
             <powerup chance="0.05" class="chance_of_new_powerup" life="-1">
                 <affecter attribute="powerup_scope">
@@ -1410,7 +1405,7 @@
             </powerup>
         </enhancement>
     </item>
-    <item class="gloves" cost="50000" displayname="Executioner's Axe" enemy_level="-1" model="pickups/equip_belt_a" name="XCUTNR_AXE" quality="legend" spawned_from="Executioner" type="equipment" unique="true">
+    <item class="gloves" cost="75000" displayname="Executioner's Axe" enemy_level="-1" model="pickups/equip_belt_a" name="XCUTNR_AXE" quality="legend" spawned_from="Executioner" type="equipment" unique="true">
         <enhancement description="Finishers do ^double $DMG">
             <powerup life="-1">
                 <affecter affect_type="scale" attribute="damage" level="2" scope_finishers="true"/>
@@ -1425,35 +1420,35 @@
         </enhancement>
         <enhancement description="+^%d%% critical chance on melee attacks">
             <powerup life="-1">
-                <affecter attribute="atk_critical" level="0.0301">
+                <affecter attribute="atk_critical" level="0.10">
                     <scope scope_attack="punch"/>
                     <scope scope_attack="kick"/>
                 </affecter>
             </powerup>
         </enhancement>
     </item>
-    <item class="armor" cost="50000" displayname="Armor of Galactus" enemy_level="-1" model="pickups/equip_belt_a" name="GLCTUS_AMR" quality="legend" spawned_from="Galactus" type="equipment" unique="true">
-        <enhancement description="Absorbs ^10%% of $DMG and turns it into $EP">
+    <item class="armor" cost="60000" displayname="Armor of Galactus" enemy_level="-1" model="pickups/equip_belt_a" name="GLCTUS_AMR" quality="legend" spawned_from="Galactus" type="equipment" unique="true">
+        <enhancement description="Absorbs ^15%% of $DMG and turns it into $EP">
             <powerup life="-1">
-                <affecter attribute="def_absorb_energy" level="0.1"/>
+                <affecter attribute="def_absorb_energy" level="0.15"/>
             </powerup>
         </enhancement>
     </item>
     <item class="gloves" cost="50000" displayname="Imperial Mantle" enemy_level="-1" model="pickups/equip_belt_a" name="GLDTR_MNTL" quality="legend" spawned_from="Gladiator" type="equipment" unique="true">
         <enhancement description="+^%d to Body, Focus and Strike">
             <powerup life="-1">
-                <affecter attribute="traits" level="6"/>
+                <affecter attribute="traits" level="7"/>
             </powerup>
         </enhancement>
     </item>
-    <item class="gloves" cost="50000" displayname="Stone Touch" enemy_level="-1" model="pickups/equip_belt_a" name="GRGYL_TUCH" quality="legend" spawned_from="GreyGargoyle" type="equipment" unique="true">
-        <enhancement description="^3%% chance to turn victim into stone">
-            <powerup chance="0.03" class="chance_of_new_powerup" life="-1">
+    <item class="gloves" cost="40000" displayname="Stone Touch" enemy_level="-1" model="pickups/equip_belt_a" name="GRGYL_TUCH" quality="legend" spawned_from="GreyGargoyle" type="equipment" unique="true">
+        <enhancement description="^7%% chance to turn victim into stone">
+            <powerup chance="0.07" class="chance_of_new_powerup" life="-1">
                 <powerup class="freeze" life="30" no_shatter_on_damage="true" renderfx="chilled" shatter_on_finisher="true"/>
             </powerup>
         </enhancement>
     </item>
-    <item class="gloves" cost="50000" displayname="Hussar's Whip" enemy_level="-1" model="pickups/equip_belt_a" name="HUSSR_WHIP" quality="legend" spawned_from="Hussar" type="equipment" unique="true">
+    <item class="gloves" cost="60000" displayname="Hussar's Whip" enemy_level="-1" model="pickups/equip_belt_a" name="HUSSR_WHIP" quality="legend" spawned_from="Hussar" type="equipment" unique="true">
         <enhancement description="+^%d $HP per knockout">
             <powerup life="-1">
                 <affecter attribute="health_per_kill" level="25"/>
@@ -1463,23 +1458,18 @@
     <item class="gloves" cost="50000" displayname="Blood of the Kraken" enemy_level="-1" model="pickups/equip_belt_a" name="KRKN_BLOOD" quality="legend" spawned_from="Kraken" type="equipment" unique="true">
         <enhancement description="+^%d%% $HP">
             <powerup life="-1">
-                <affecter affect_type="scale" attribute="maxhealth" level="1.0501"/>
-            </powerup>
-        </enhancement>
-        <enhancement description="^%d%% $EP">
-            <powerup life="-1">
-                <affecter affect_type="scale" attribute="maxenergy" level="0.9501"/>
+                <affecter affect_type="scale" attribute="maxhealth" level="1.15"/>
             </powerup>
         </enhancement>
     </item>
-    <item class="gloves" cost="50000" displayname="Atlantean Scale" enemy_level="-1" model="pickups/equip_belt_a" name="KRNG_SCALE" quality="legend" spawned_from="Krang" type="equipment" unique="true">
+    <item class="gloves" cost="60000" displayname="Atlantean Scale" enemy_level="-1" model="pickups/equip_belt_a" name="KRNG_SCALE" quality="legend" spawned_from="Krang" type="equipment" unique="true">
         <enhancement description="Finishers do +^%d%% $DMG">
             <powerup life="-1">
                 <affecter affect_type="scale" attribute="damage" level="1.5" scope_finishers="true"/>
             </powerup>
         </enhancement>
     </item>
-    <item class="gloves" cost="50000" displayname="Dark Elf Armor" enemy_level="-1" model="pickups/equip_belt_a" name="KRUS_ARMR" quality="legend" spawned_from="Kurse" type="equipment" unique="true">
+    <item class="gloves" cost="75000" displayname="Dark Elf Armor" enemy_level="-1" model="pickups/equip_belt_a" name="KRUS_ARMR" quality="legend" spawned_from="Kurse" type="equipment" unique="true">
         <enhancement description="If blocking, melee attacker is stunned for ^3 seconds">
             <powerup class="hurt_attacker" life="-1" onlyhurtmelee="true">
                 <affecter attribute="powerup_scope">
@@ -1493,45 +1483,40 @@
         </enhancement>
         <enhancement description="+^%d%% to $DR">
             <powerup life="-1">
-                <affecter affect_type="scale" attribute="defense_rating_scale" level="1.25"/>
+                <affecter affect_type="scale" attribute="defense_rating_scale" level="1.30"/>
             </powerup>
         </enhancement>
     </item>
-    <item class="gloves" cost="50000" displayname="Lizard's Serum" enemy_level="-1" model="pickups/equip_belt_a" name="LIZ_SRUM" quality="legend" spawned_from="UltraLizard" type="equipment" unique="true">
+    <item class="gloves" cost="75000" displayname="Lizard's Serum" enemy_level="-1" model="pickups/equip_belt_a" name="LIZ_SRUM" quality="legend" spawned_from="UltraLizard" type="equipment" unique="true">
         <enhancement description="+^%d $HP regeneration">
             <powerup life="-1">
-                <affecter attribute="health_regen" level="2"/>
+                <affecter attribute="health_regen" level="10"/>
             </powerup>
         </enhancement>
     </item>
-    <item class="gloves" cost="0" displayname="Loki's Gift" enemy_level="-1" model="pickups/equip_belt_a" name="LOKI_GIFT" quality="legend" spawned_from="LokiFake" type="equipment" unique="true">
-        <enhancement description="Reduces attack $DMG by ^25%%">
+    <item class="gloves" cost="50000" displayname="Loki's Gift" enemy_level="-1" model="pickups/equip_belt_a" name="LOKI_GIFT" quality="legend" spawned_from="LokiFake" type="equipment" unique="true">
+        <enhancement description="Increases attack $DMG by ^25%%">
             <powerup life="-1">
-                <affecter affect_type="scale" attribute="atk_damage" level="0.75"/>
-            </powerup>
-        </enhancement>
-        <enhancement description="Increases $DMG taken by ^25%%">
-            <powerup life="-1">
-                <affecter affect_type="scale" attribute="def_damage" level="1.25"/>
+                <affecter affect_type="scale" attribute="atk_damage" level="1.25"/>
             </powerup>
         </enhancement>
     </item>
-    <item class="gloves" cost="50000" displayname="Norn Stones" enemy_level="-1" model="pickups/equip_belt_a" name="LOKI_STON" quality="legend" spawned_from="Loki" type="equipment" unique="true">
+    <item class="gloves" cost="75000" displayname="Norn Stones" enemy_level="-1" model="pickups/equip_belt_a" name="LOKI_STON" quality="legend" spawned_from="Loki" type="equipment" unique="true">
         <enhancement description="+^%d%% $XP">
             <powerup life="-1">
-                <affecter affect_type="scale" attribute="xp" level="1.1501"/>
+                <affecter affect_type="scale" attribute="xp" level="1.25"/>
             </powerup>
         </enhancement>
         <enhancement description="+^%d%% S.H.I.E.L.D. credits">
             <powerup life="-1">
-                <affecter affect_type="scale" attribute="extra_money" level="1.3001"/>
+                <affecter affect_type="scale" attribute="extra_money" level="1.30"/>
             </powerup>
         </enhancement>
     </item>
     <item class="gloves" cost="50000" displayname="White Ring of Mandarin" enemy_level="-1" model="pickups/equip_belt_a" name="MNDRN_RING" quality="legend" spawned_from="Mandarin" type="equipment" unique="true">
-        <enhancement description="+^5 $DMG_ENERGY to all melee attacks">
+        <enhancement description="+^10 $DMG_ENERGY to all melee attacks">
             <powerup class="add_attack" damagetype="dmg_energy" life="-1">
-                <affecter attribute="special" level="5"/>
+                <affecter attribute="special" level="10"/>
                 <affecter attribute="powerup_scope">
                     <scope scope_attack="punch"/>
                     <scope scope_attack="kick"/>
@@ -1540,31 +1525,31 @@
         </enhancement>
         <enhancement description="+^%d%% $DMG to all $DMG_ENERGY powers">
             <powerup life="-1">
-                <affecter affect_type="scale" attribute="damage" level="1.35">
+                <affecter affect_type="scale" attribute="damage" level="1.30">
                     <scope scope_powers="true"/>
                     <scope scope_damage="dmg_energy"/>
                 </affecter>
             </powerup>
         </enhancement>
     </item>
-    <item class="gloves" cost="50000" displayname="Heart of Mephisto" enemy_level="-1" model="pickups/equip_belt_a" name="MPHST_HEART" quality="legend" spawned_from="Mephisto" type="equipment" unique="true">
+    <item class="gloves" cost="75000" displayname="Heart of Mephisto" enemy_level="-1" model="pickups/equip_belt_a" name="MPHST_HEART" quality="legend" spawned_from="Mephisto" type="equipment" unique="true">
         <enhancement description="^10%% of $DMG dealt returns as $HP">
             <powerup life="-1">
                 <affecter affect_type="scale" attribute="atk_vampire" level="0.1"/>
             </powerup>
         </enhancement>
     </item>
-    <item class="gloves" cost="50000" displayname="MODOK Chip" enemy_level="-1" model="pickups/equip_belt_a" name="MODOK_CHIP" quality="legend" spawned_from="Modok" type="equipment" unique="true">
+    <item class="gloves" cost="60000" displayname="MODOK Chip" enemy_level="-1" model="pickups/equip_belt_a" name="MODOK_CHIP" quality="legend" spawned_from="Modok" type="equipment" unique="true">
         <enhancement description="+^%d%% $XP">
             <powerup life="-1">
-                <affecter affect_type="scale" attribute="xp" level="1.0501"/>
+                <affecter affect_type="scale" attribute="xp" level="1.15"/>
             </powerup>
         </enhancement>
     </item>
     <item class="gloves" cost="50000" displayname="Master Hologram" enemy_level="-1" model="pickups/equip_belt_a" name="MSYTR_HLOGRM" quality="legend" spawned_from="Mysterio" type="equipment" unique="true">
-        <enhancement description="+^10%% chance to dodge melee attacks">
+        <enhancement description="+^25%% chance to dodge melee attacks">
             <powerup life="-1">
-                <affecter attribute="def_dodge" level="0.1">
+                <affecter attribute="def_dodge" level="0.25">
                     <scope scope_attack="punch"/>
                     <scope scope_attack="kick"/>
                 </affecter>
@@ -1574,31 +1559,31 @@
     <item class="gloves" cost="50000" displayname="Grappling Speed" enemy_level="-1" model="pickups/equip_belt_a" name="PDRVR_GRAPL" quality="legend" spawned_from="Piledriver" type="equipment" unique="true">
         <enhancement description="Grab moves do +^%d%% $DMG">
             <powerup life="-1">
-                <affecter affect_type="scale" attribute="damage" level="1.5">
+                <affecter affect_type="scale" attribute="damage" level="1.65">
                     <scope scope_attack="throw"/>
                 </affecter>
             </powerup>
         </enhancement>
     </item>
     <item class="gloves" cost="50000" displayname="Radioactive Touch" enemy_level="-1" model="pickups/equip_belt_a" name="RACTV_TOUCH" quality="legend" spawned_from="Radioactiveman" type="equipment" unique="true">
-        <enhancement description="+^5%% melee $DMG as $DMG_RADIATION">
-            <powerup class="add_harming" damagepercent="0.05" life="-1" radiation="true" time="2"/>
+        <enhancement description="+^10%% melee $DMG as $DMG_RADIATION">
+            <powerup class="add_harming" damagepercent="0.10" life="-1" radiation="true" time="2"/>
         </enhancement>
     </item>
     <item class="gloves" cost="50000" displayname="Rhino's Horn" enemy_level="-1" model="pickups/equip_belt_a" name="RHNO_HORN" quality="legend" spawned_from="Rhino" type="equipment" unique="true">
-        <enhancement description="+^10%% to all resistances (except mental)">
+        <enhancement description="+^15%% to all resistances (except mental)">
             <powerup life="-1">
-                <affecter attribute="resist_physical" level="0.1"/>
-                <affecter attribute="resist_energy" level="0.1"/>
-                <affecter attribute="resist_radiation" level="0.1"/>
-                <affecter attribute="resist_elemental" level="0.1"/>
+                <affecter attribute="resist_physical" level="0.15"/>
+                <affecter attribute="resist_energy" level="0.15"/>
+                <affecter attribute="resist_radiation" level="0.15"/>
+                <affecter attribute="resist_elemental" level="0.15"/>
             </powerup>
         </enhancement>
     </item>
     <item class="gloves" cost="50000" displayname="Scorpion's Tail" enemy_level="-1" model="pickups/equip_belt_a" name="SCRP_TAIL" quality="legend" spawned_from="Scorpion" type="equipment" unique="true">
-        <enhancement description="+^10%% chance to cause $KB on ranged attacks">
+        <enhancement description="+^25%% chance to cause $KB on ranged attacks">
             <powerup life="-1">
-                <affecter attribute="atk_knockback_chance" level="0.1">
+                <affecter attribute="atk_knockback_chance" level="0.25">
                     <scope scope_attack="projectile"/>
                     <scope scope_attack="beam"/>
                 </affecter>
@@ -1606,9 +1591,9 @@
         </enhancement>
     </item>
     <item class="gloves" cost="50000" displayname="Shocker's Gloves" enemy_level="-1" model="pickups/equip_belt_a" name="SHKR_GLOVS" quality="legend" spawned_from="Shocker" type="equipment" unique="true">
-        <enhancement description="+^10 $DMG_ELECTRICITY to all melee attacks">
+        <enhancement description="+^15 $DMG_ELECTRICITY to all melee attacks">
             <powerup class="add_attack" damagetype="dmg_electricity" life="-1">
-                <affecter attribute="special" level="10"/>
+                <affecter attribute="special" level="15"/>
                 <affecter attribute="powerup_scope">
                     <scope scope_attack="punch"/>
                     <scope scope_attack="kick"/>
@@ -1616,10 +1601,10 @@
             </powerup>
         </enhancement>
     </item>
-    <item class="gloves" cost="50000" displayname="Starbolt's Flame" enemy_level="-1" model="pickups/equip_belt_a" name="STRBLT_FLAM" quality="legend" spawned_from="Starbolt" type="equipment" unique="true">
+    <item class="gloves" cost="75000" displayname="Starbolt's Flame" enemy_level="-1" model="pickups/equip_belt_a" name="STRBLT_FLAM" quality="legend" spawned_from="Starbolt" type="equipment" unique="true">
         <enhancement description="^5 $DMG_FIRE to all melee attacks">
             <powerup class="add_attack" damagetype="dmg_fire" life="-1">
-                <affecter attribute="special" level="5"/>
+                <affecter attribute="special" level="10"/>
                 <affecter attribute="powerup_scope">
                     <scope scope_attack="punch"/>
                     <scope scope_attack="kick"/>
@@ -1628,26 +1613,26 @@
         </enhancement>
         <enhancement description="+^%d%% $DMG to all $DMG_FIRE powers">
             <powerup life="-1">
-                <affecter affect_type="scale" attribute="damage" level="1.35">
+                <affecter affect_type="scale" attribute="damage" level="1.50">
                     <scope scope_powers="true"/>
                     <scope scope_damage="dmg_fire"/>
                 </affecter>
             </powerup>
         </enhancement>
     </item>
-    <item class="gloves" cost="50000" displayname="Hydro Suit" enemy_level="-1" model="pickups/equip_belt_a" name="TGRSHK_SUIT" quality="legend" spawned_from="Tigershark" type="equipment" unique="true">
+    <item class="gloves" cost="75000" displayname="Hydro Suit" enemy_level="-1" model="pickups/equip_belt_a" name="TGRSHK_SUIT" quality="legend" spawned_from="Tigershark" type="equipment" unique="true">
         <enhancement description="+^%d $HP per knockout">
             <powerup life="-1">
-                <affecter attribute="health_per_kill" level="10"/>
+                <affecter attribute="health_per_kill" level="15"/>
             </powerup>
         </enhancement>
         <enhancement description="+^%d $EP per knockout">
             <powerup life="-1">
-                <affecter attribute="energy_per_kill" level="10"/>
+                <affecter attribute="energy_per_kill" level="15"/>
             </powerup>
         </enhancement>
     </item>
-    <item class="gloves" cost="50000" displayname="Helmet of Titannus" enemy_level="-1" model="pickups/equip_belt_a" name="TITNS_HELM" quality="legend" spawned_from="Titannus" type="equipment" unique="true">
+    <item class="gloves" cost="60000" displayname="Helmet of Titannus" enemy_level="-1" model="pickups/equip_belt_a" name="TITNS_HELM" quality="legend" spawned_from="Titannus" type="equipment" unique="true">
         <enhancement description="+^%d $HP">
             <powerup life="-1">
                 <affecter attribute="maxhealth" level="50"/>
@@ -1655,21 +1640,21 @@
         </enhancement>
         <enhancement description="+^%d Strike">
             <powerup life="-1">
-                <affecter attribute="strength" level="10"/>
+                <affecter attribute="strength" level="15"/>
             </powerup>
         </enhancement>
     </item>
     <item class="gloves" cost="50000" displayname="Ulik's Fists" enemy_level="-1" model="pickups/equip_belt_a" name="ULIK_FISTS" quality="legend" spawned_from="Ulik" type="equipment" unique="true">
         <enhancement description="+^%d%% critical chance on all attacks">
             <powerup life="-1">
-                <affecter attribute="critical" level="0.101"/>
+                <affecter attribute="critical" level="0.15"/>
             </powerup>
         </enhancement>
     </item>
-    <item class="gloves" cost="50000" displayname="Ultimo's Plating" enemy_level="-1" model="pickups/equip_belt_a" name="ULTMO_PLTNG" quality="legend" spawned_from="Ultimo" type="equipment" unique="true">
+    <item class="gloves" cost="75000" displayname="Ultimo's Plating" enemy_level="-1" model="pickups/equip_belt_a" name="ULTMO_PLTNG" quality="legend" spawned_from="Ultimo" type="equipment" unique="true">
         <enhancement description="^%d%% chance to deflect projectiles">
             <powerup life="-1">
-                <affecter attribute="deflect_projectiles" level="0.1"/>
+                <affecter attribute="deflect_projectiles" level="0.25"/>
             </powerup>
         </enhancement>
         <enhancement description="+^%d%% to $DR">
@@ -1679,31 +1664,31 @@
         </enhancement>
     </item>
     <item class="gloves" cost="50000" displayname="Shi'ar Battle Armor" enemy_level="-1" model="pickups/equip_belt_a" name="WRSTR_ARMR" quality="legend" spawned_from="Warstar" type="equipment" unique="true">
-        <enhancement description="Reflects ^10%% of melee $DMG">
+        <enhancement description="Reflects ^15%% of melee $DMG">
             <powerup life="-1">
-                <affecter affect_type="scale" attribute="reflect_damage" level="0.1">
+                <affecter affect_type="scale" attribute="reflect_damage" level="0.15">
                     <scope scope_attack="punch"/>
                     <scope scope_attack="kick"/>
                 </affecter>
             </powerup>
         </enhancement>
     </item>
-    <item class="gloves" cost="50000" displayname="Bionic Arm" enemy_level="-1" model="pickups/equip_belt_a" name="WNTR_ARM" quality="legend" spawned_from="WinterSoldier" type="equipment" unique="true">
+    <item class="gloves" cost="40000" displayname="Bionic Arm" enemy_level="-1" model="pickups/equip_belt_a" name="WNTR_ARM" quality="legend" spawned_from="WinterSoldier" type="equipment" unique="true">
         <enhancement description="+^%d Strike">
             <powerup life="-1">
-                <affecter attribute="strength" level="5"/>
+                <affecter attribute="strength" level="10"/>
             </powerup>
         </enhancement>
     </item>
-    <item class="gloves" cost="50000" displayname="Wrecker's Crowbar" enemy_level="-1" model="pickups/equip_belt_a" name="WREKR_CRWBR" quality="legend" spawned_from="Wrecker" type="equipment" unique="true">
+    <item class="gloves" cost="60000" displayname="Wrecker's Crowbar" enemy_level="-1" model="pickups/equip_belt_a" name="WREKR_CRWBR" quality="legend" spawned_from="Wrecker" type="equipment" unique="true">
         <enhancement description="^%d%% chance to deflect projectiles">
             <powerup life="-1">
-                <affecter attribute="deflect_projectiles" level="0.15"/>
+                <affecter attribute="deflect_projectiles" level="0.25"/>
             </powerup>
         </enhancement>
         <enhancement description="+^%d%% melee $DMG">
             <powerup life="-1">
-                <affecter affect_type="scale" attribute="damage" level="1.05">
+                <affecter affect_type="scale" attribute="damage" level="1.30">
                     <scope scope_attack="punch"/>
                     <scope scope_attack="kick"/>
                 </affecter>
