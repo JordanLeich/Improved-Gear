@@ -1325,6 +1325,73 @@
             </powerup>
         </enhancement>
     </item>
+	<item class="gloves" cost="50000" displayname="Electric Conductor" enemy_level="-1" model="pickups/equip_belt_a" name="ELEC_SITE2" quality="legend" spawned_from="BullsI" type="equipment" unique="true">
+        <enhancement description="+^10 $DMG_ELECTRICITY to all melee attacks">
+            <powerup class="add_attack" damagetype="dmg_electricity" life="-1">
+                <affecter attribute="special" level="10" />
+                <affecter attribute="powerup_scope">
+                    <scope scope_attack="punch" />
+                    <scope scope_attack="kick" />
+                </affecter>
+            </powerup>
+        </enhancement>
+    </item>
+	<item class="gloves" cost="50000" displayname="Berserker Rage" enemy_level="-1" model="pickups/equip_belt_a" name="BERSR_RAGE" quality="legend" spawned_from="DarkWolverine" type="equipment" unique="true">
+        <enhancement description="+^30%% $DMG to all melee attacks">
+            <powerup life="-1">
+                <affecter affect_type="scale" attribute="damage" level="1.3" scope_non_powers="true" />
+            </powerup>
+        </enhancement>
+    </item>
+	<item class="gloves" cost="50000" displayname="King of New York" enemy_level="-1" model="pickups/equip_belt_a" name="KING_OFNYC" quality="legend" spawned_from="FiskNPC" type="equipment" unique="true">
+        <enhancement description="+^20%% Physical Resistance, No Knockback">
+            <powerup life="-1">
+                <affecter attribute="resist_physical" level="0.2" />
+                <affecter affect_type="scale" attribute="def_knockback" level="0" />
+            </powerup>
+        </enhancement>
+    </item>
+	<item class="gloves" cost="50000" displayname="Heart of Latveria" enemy_level="-1" model="pickups/equip_belt_a" name="HEART_LTVA" quality="legend" spawned_from="LvB" type="equipment" unique="true">
+        <enhancement description="+^10 Body">
+            <powerup life="-1">
+                <affecter attribute="body" level="10" />
+            </powerup>
+        </enhancement>
+    </item>
+	<item class="gloves" cost="50000" displayname="Astral Shield" enemy_level="-1" model="pickups/equip_belt_a" name="AST_SHIELD" quality="legend" spawned_from="ShadowKing" type="equipment" unique="true">
+        <enhancement description="Immunity to $DMG_MENTAL">
+            <powerup life="-1">
+                <affecter attribute="resist_mental" level="1.0" />
+            </powerup>
+        </enhancement>
+        <enhancement description="+^15%% damage to all powers">
+            <powerup life="-1">
+                <affecter affect_type="scale" attribute="atk_damage" level="1.15">
+                    <scope scope_powers="true" />
+                </affecter>
+            </powerup>
+        </enhancement>
+    </item>
+	<item class="gloves" cost="50000" displayname="Cursed Swords" enemy_level="-1" model="pickups/equip_belt_a" name="CUR_SWORDS" quality="legend" spawned_from="Swordsman_PSP" type="equipment" unique="true">
+        <enhancement description="Increases Blade Damage by ^15%%">
+            <powerup life="-1">
+                <affecter affect_type="scale" attribute="atk_damage" level="1.15" scope_damage="dmg_blade" />
+            </powerup>
+        </enhancement>
+    </item>
+	<item class="gloves" cost="50000" displayname="Aura of Victory" enemy_level="-1" model="pickups/equip_belt_a" name="AURA_VCTORY" quality="legend" spawned_from="Victory" type="equipment" unique="true">
+        <enhancement description="+^%d $HP per Knockout">
+            <powerup life="-1">
+                <affecter attribute="health_per_kill" level="20" />
+            </powerup>
+        </enhancement>
+        <enhancement description="+^%d $EP per Knockout">
+            <powerup life="-1">
+                <affecter attribute="energy_per_kill" level="20" />
+            </powerup>
+        </enhancement>
+    </item>
+	
     <item class="gloves" cost="75000" displayname="Spider's Bite" enemy_level="-1" model="pickups/equip_belt_a" name="DK_SPDMN_BITE" quality="legend" spawned_from="DarkSpiderman" type="equipment" unique="true">
         <enhancement description="+^10%% chance to dodge melee attacks">
             <powerup life="-1">
